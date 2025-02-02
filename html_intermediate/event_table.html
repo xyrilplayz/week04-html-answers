@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Product Tables</title>
+        <style>
+            table{
+                width: 100%;
+                border-collapse: collapse;
+            }
+            th, td {
+                padding: 8px;
+                text-align: center;
+                transition: background-color 1s ease-out;
+                transition: color 1s ease-out;
+            }
+            th {
+                border: 1px solid #b6c7ff;
+                background-color: #07002b;
+                color: #ffffff;
+            }
+            tbody tr:nth-child(1) th{
+                background-color: #010101;
+            }
+            td {
+                border: 1px solid #070038;
+            }
+            tbody tr:nth-child(odd) td{
+                background-color: #4967c9;
+                color: #fffafa;
+            }
+            tbody tr:nth-child(even) td{
+                background-color: #ced9fd;
+                color: #181819;
+            }
+            tbody tr td:nth-child(2) {
+                font-style: italic;
+                font-size: 14px;
+            }
+            tbody tr:nth-child(odd) td:hover{
+                background-color: #76f785;
+                color: #16261d;
+            }
+            tbody tr:nth-child(even) td:hover{
+                background-color: #084910;
+                color: #b6eea8;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1></h1>
+        <table>
+            <tr>
+                <th colspan="4">Event Calendar</th>
+            </tr>
+            <tr>
+                <th colspan="2">Event Name</th>
+                <th>Date</th>
+                <th>Location</th>
+            </tr>
+            <tr>
+                <td colspan="2">Chinese New Year</td>
+                <td>February 1 (Saturday)</td>
+                <td>Philippines</td>
+            </tr>
+            <tr>
+                <td colspan="2">EDSA People Power Revolution Anniversary</td>
+                <td>February 25 (Tuesday)</td>
+                <td>Epifacio de los Santos Aventue, Manila, Philippines</td>
+            </tr>
+            <tr>
+                <td colspan="2">All Saints' Day</td>
+                <td>November 1 (Saturday)</td>
+                <td>Philippines</td>
+            </tr>
+        </table>
+    </body>
+</html>
